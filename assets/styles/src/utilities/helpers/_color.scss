@@ -1,0 +1,14 @@
+@import "math";
+/// Get color from foundation-palette
+///
+/// @param {key} color key from foundation-palette
+///
+/// @returns {Color} color from foundation-palette
+@function get-color($key) {
+  @if map-has-key($main-palette, $key) {
+    @return map-get($main-palette, $key);
+  }
+  @else {
+    @error 'given $key is not available in $foundation-palette';
+  }
+}

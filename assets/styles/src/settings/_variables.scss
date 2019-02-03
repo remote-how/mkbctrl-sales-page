@@ -1,0 +1,47 @@
+// == Typography
+$project-main-font:                                "Bebas Neue", sans-serif;
+$project-secondary-font:                            "Open Sans", sans-serif;
+$font-size-base:                                                       1rem;
+
+// == Spacing
+$base-padding-side:                                                    1rem;
+
+// == Grid
+$project-grid-size:                                                      12;
+$project-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+$screen-xs-min:                         map-get($project-breakpoints, 'xs');
+$screen-xs-max:                   map-get($project-breakpoints, "sm") - 1px;
+$screen-sm-min:                         map-get($project-breakpoints, "sm");
+$screen-sm-max:                   map-get($project-breakpoints, "md") - 1px;
+$screen-md-min:                         map-get($project-breakpoints, "md");
+$screen-md-max:                   map-get($project-breakpoints, "lg") - 1px;
+$screen-lg-min:                         map-get($project-breakpoints, "lg");
+$screen-lg-max:                   map-get($project-breakpoints, "xl") - 1px;
+$screen-xl-min:                         map-get($project-breakpoints, "xl");
+$screen-xl-max:                   map-get($project-breakpoints, "xl") - 1px;
+$screen-xxl-min:                       map-get($project-breakpoints, "xxl");
+
+// == Containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1220px
+);
+
+// == Colors
+$primary:                                                        #f5b400;
+$primary-light:                                                  #ffd11c;
+$secondary:                                                      #282828;
+$tetriary:                                                       #4500f5;
+
+$gray:                                                           #f2f2f2;

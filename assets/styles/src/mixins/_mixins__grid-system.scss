@@ -1,0 +1,19 @@
+/*
+ * Custom simple grid system
+ */
+
+@mixin rag-col($col-size: null, $grid-size: $project-grid-size){
+  box-sizing: border-box;
+  padding-left: $base-padding-side;
+  padding-right: $base-padding-side;
+
+  @if type-of($col-size) == number {
+    $flex-grow: 0;
+    $flex-shrink: 0;
+    $flex-basis: percentage($col-size / $grid-size);
+
+    flex: $flex-grow $flex-shrink $flex-basis;
+    // For IE 11 / 10 add max width as without it IE cant calculate paddings and borders properly
+    max-width: $flex-basis;
+  }
+}

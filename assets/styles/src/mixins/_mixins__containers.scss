@@ -1,0 +1,20 @@
+/*
+ * Make a row container
+ */
+
+@mixin basic-row-styles() {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1024px) {
+    max-width: calc(100% - 40px);
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1439px) {
+    max-width: rem-calc(960px);
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: rem-calc(1280px);
+  }
+}

@@ -1,0 +1,18 @@
+/*
+ *
+ */
+
+@mixin rag-horizontal-padding($base-pad-val){
+  @media screen and (max-width: 1024px) {
+    padding-top: $base-pad-val*0.55;
+    padding-bottom: $base-pad-val*0.55;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1439px) {
+    padding-top: $base-pad-val*0.8;
+    padding-bottom: $base-pad-val*0.8;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: $base-pad-val;
+    padding-bottom: $base-pad-val;
+  }
+}

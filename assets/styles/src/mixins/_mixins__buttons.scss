@@ -1,0 +1,80 @@
+/*
+ * Custom button style
+ */
+
+// In here we define the shape of the button and it's basic properties
+@mixin rag-btn-structure($btn-structure) {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  transition: background-color 0.4s cubic-bezier(.25,.8,.25,1);
+
+  @if $btn-structure == 'small' {
+    padding: 4px 6px;
+    font-size: 0.6em;
+  } @else if $btn-structure == 'medium' {
+    padding: 6px 8px;
+    font-size: 0.8em;
+  } @else if $btn-structure == 'regular' {
+    padding: 8px 12px;
+    font-size: 1em;
+  } @else if $btn-structure == 'large' {
+    padding: 12px 16px;
+    font-size: 1.2em;
+  }
+}
+
+
+// In here we define how the button will look and behave on hover
+@mixin rag-btn-style($btn-style, $has-shadow-on-hover: 'false') {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+
+  @if $btn-style == 'primary' {
+    $style-color: $primary;
+    border-color: $style-color;
+    background-color: $style-color;
+    color: white !important;
+    @if $has-shadow-on-hover == 'false'{
+      &:hover,
+      &:focus{
+        border-color: darken($style-color, 8%);
+        background-color: darken($style-color, 8%);
+      }
+    }
+  } @else if $btn-style == 'secondary' {
+    $style-color: $secondary;
+    border-color: $style-color;
+    background-color: $style-color;
+    color: white !important;
+    @if $has-shadow-on-hover == 'false'{
+      &:hover,
+      &:focus{
+        //border-color: darken(get-color(secondary), 8%);
+        background-color: darken($style-color, 8%);
+      }
+    }
+  } @else if $btn-style == 'tetriary' {
+    $style-color: $tetriary;
+    border-color: $style-color;
+    background-color: $style-color;
+    color: white !important;
+    @if $has-shadow-on-hover == 'false'{
+      &:hover,
+      &:focus{
+        border-color: darken($style-color, 8%);
+        background-color: darken($style-color, 8%);
+      }
+    }
+  }
+
+  @if $has-shadow-on-hover == 'true'{
+    transition: box-shadow 0.4s cubic-bezier(.25,.8,.25,1);
+    &:hover,
+    &:focus{
+      @include box_shadow(2);
+    }
+  }
+
+}

@@ -1,0 +1,86 @@
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.switch-sm-down {
+  @media screen and (max-width: $screen-sm-max) {
+    & > div {
+      &:first-of-type {
+        order: 2
+      }
+
+      &:last-of-type {
+        order: 1
+      }
+    }
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.hidden-md {
+  @media screen and (min-width: $screen-md-min) {
+    display: none !important;
+  }
+}
+
+.hidden-sm-down {
+  @media screen and (max-width: $screen-sm-max) {
+    display: none !important;
+  }
+}
+
+.hidden-md-down {
+  @media screen and (max-width: $screen-md-max) {
+    display: none !important;
+  }
+}
+
+.visible-sm-down {
+  @media screen and (max-width: $screen-sm-max) {
+    display: inline-block !important;
+  }
+  @media screen and (min-width: $screen-md-min) {
+    display: none !important
+  }
+}
+
+.visible-md-down {
+  @media screen and (max-width: $screen-md-min) {
+    display: inline-block !important;
+  }
+  @media screen and (min-width: $screen-md-max) {
+    display: none !important
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "easy-boilerplate",
+  "version": "1.0.0",
+  "description": "SCSS + Gulp boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MkbCtrl/easy-boilerplate"
+  },
+  "author": "Mikołaj Koropecki",
+  "license": "GPL-2.0",
+  "homepage": "https://github.com/MkbCtrl",
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "ansi-colors": "latest",
+    "babel-eslint": "latest",
+    "browser-sync": "latest",
+    "eslint": "latest",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "latest",
+    "fancy-log": "latest",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-filter": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-newer": "latest",
+    "gulp-plumber": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest"
+  },
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "gulp",
+    "scripts": "gulp compileScripts",
+    "styles": "gulp compileStyles",
+    "watch": "gulp watch"
+  },
+  "dependencies": {}
+}

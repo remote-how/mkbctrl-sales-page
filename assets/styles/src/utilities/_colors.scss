@@ -1,0 +1,36 @@
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.text-tetriary {
+  color: $tetriary !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-tetriary {
+  background-color: $tetriary !important;
+}
+
+.bg-blob-tiny {
+  background: url(../../img/blobs/grey-blob-tiny.png) 0% 50% no-repeat;
+  background-size: contain;
+}
+
+.border-tetriary {
+  border-color: $tetriary !important;
+}

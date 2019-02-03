@@ -1,0 +1,17 @@
+.btn {
+  @include rag-btn-structure('regular')
+}
+
+.btn-primary {
+  @include rag-btn-style('primary')
+}
+
+.btn-tetriary {
+  @include rag-btn-style('tetriary')
+}
+
+.btn-pulse-primary {
+  &:hover {
+    animation: pulse 2s infinite;
+  }
+}

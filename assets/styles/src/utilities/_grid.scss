@@ -1,0 +1,15 @@
+.col-2 {
+  @include rag-col(2)
+}
+
+.col-4 {
+  @include rag-col(4);
+}
+
+.col-6 {
+  @include rag-col(6);
+}
+
+.col-10 {
+  @include rag-col(10);
+}

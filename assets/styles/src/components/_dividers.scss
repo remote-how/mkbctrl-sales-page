@@ -1,0 +1,28 @@
+.h-divide,
+.v-divide {
+  display: inline-block;
+}
+
+.h-divide {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.v-divide {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.v-divide-thin-1 {
+  width: 2px;
+  height: 40px;
+}
+
+.h-divide-thin-1 {
+  height: 2px;
+  width: 40px;
+}
+
+.h-divide-short {
+  width: 25px;
+}

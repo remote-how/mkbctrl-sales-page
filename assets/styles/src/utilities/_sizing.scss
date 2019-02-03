@@ -1,0 +1,39 @@
+.w-100 {
+  width: 100%;
+}
+
+.mw-100 {
+  max-width: 100%;
+}
+
+.w-100-nodes-sm-down {
+  @media screen and (max-width: $screen-md-max) {
+    * {
+      width: 100%;
+    }
+  }
+}
+
+.trans-sm-down {
+  @media screen and (max-width: $screen-sm-max) {
+    flex: 1 0 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.trans-md-down {
+  @media screen and (max-width: $screen-md-max) {
+    flex: 1 0 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
